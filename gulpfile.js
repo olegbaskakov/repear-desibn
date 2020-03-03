@@ -22,6 +22,6 @@ gulp.task('default', function (done) {
   gulp.src('./css/*.css')
       .pipe(cssmin())
       .pipe(rename({suffix: '.min'}))
-      .pipe(gulp.dest('./dist'));
+      .pipe(gulp.dest('./dest'));
     done();
 });
